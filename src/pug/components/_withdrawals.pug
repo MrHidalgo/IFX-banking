@@ -1,0 +1,27 @@
+// SECTION withdrawals :: START
+
+section#b-withdrawals.b-withdrawals
+  .c-grid
+    .b-withdrawals__wrapper
+
+      p.b-withdrawals__title!= "Withdrawals"
+      p.b-withdrawals__desc!= "IFX Clients enjoy the benefit of almost instant withdrawals powered by the myIFXBrokers secure client area. When you wish to undertake a withdrawal, simply login to your myIFXBrokers (Secure client area) and follow the simplified withdrawal process from your IFXWallet."
+
+      ul.b-withdrawals__list
+        li.b-withdrawals__list-item
+          div
+            +iconSVG('i-withdrawals-0')
+          div
+            p.b-withdrawals__desc!= "Please note that withdrawals for International clients are processed immediately but can take up to 5 working days to reach your bank account."
+        li.b-withdrawals__list-item
+          div
+            +iconSVG('i-withdrawals-1')
+          div
+            p.b-withdrawals__desc!= "Due to third party regulations, funds will only be deposited in the bank account aligned with your IFX trading account. A joint bank account is acceptable, provided you are a mandated signatory."
+        li.b-withdrawals__list-item
+          div
+            +iconSVG('i-withdrawals-2')
+          div
+            p.b-withdrawals__desc!= "Credit card withdrawals are limited to the original deposit amount. Withdrawals exceeding this amount require a different withdrawal method. Should an account, funded by credit card, be subject to a withdrawal within the first 60 days it will be refunded to that credit card only."
+
+// SECTION withdrawals :: END
