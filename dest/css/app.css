@@ -384,37 +384,90 @@
   background-color: #f7f7f7;
 }
 
-/* line 10, src/scss/_components/_funding.scss */
+@media screen and (max-width: 767px) {
+  /* line 3, src/scss/_components/_funding.scss */
+  .b-funding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+/* line 14, src/scss/_components/_funding.scss */
 .b-funding .c-grid {
   max-width: 1350px;
 }
 
-/* line 14, src/scss/_components/_funding.scss */
+/* line 18, src/scss/_components/_funding.scss */
 .b-funding__title {
   padding-bottom: 44px;
   text-align: center;
   font-weight: bold;
-  font-size: 80px;
   color: #000000;
   letter-spacing: 0;
   line-height: 1;
+  font-size: 45px;
 }
 
-/* line 24, src/scss/_components/_funding.scss */
+@media screen and (min-width: 320px) {
+  /* line 18, src/scss/_components/_funding.scss */
+  .b-funding__title {
+    font-size: -webkit-calc(45px + 35 * (100vw - 320px) / 1046);
+    font-size: calc(45px + 35 * (100vw - 320px) / 1046);
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  /* line 18, src/scss/_components/_funding.scss */
+  .b-funding__title {
+    font-size: 80px;
+  }
+}
+
+/* line 28, src/scss/_components/_funding.scss */
 .b-funding__desc {
   width: 100%;
   max-width: 910px;
   margin-right: auto;
   margin-left: auto;
-  padding-bottom: 77px;
   text-align: center;
   font-family: 'SF Pro Text', sans-serif;
-  font-size: 18px;
   color: #000000;
   letter-spacing: 0;
+  padding-bottom: 35px;
+  font-size: 14px;
 }
 
-/* line 37, src/scss/_components/_funding.scss */
+@media screen and (min-width: 320px) {
+  /* line 28, src/scss/_components/_funding.scss */
+  .b-funding__desc {
+    padding-bottom: -webkit-calc(35px + 42 * (100vw - 320px) / 1046);
+    padding-bottom: calc(35px + 42 * (100vw - 320px) / 1046);
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  /* line 28, src/scss/_components/_funding.scss */
+  .b-funding__desc {
+    padding-bottom: 77px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  /* line 28, src/scss/_components/_funding.scss */
+  .b-funding__desc {
+    font-size: -webkit-calc(14px + 4 * (100vw - 320px) / 672);
+    font-size: calc(14px + 4 * (100vw - 320px) / 672);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* line 28, src/scss/_components/_funding.scss */
+  .b-funding__desc {
+    font-size: 18px;
+  }
+}
+
+/* line 41, src/scss/_components/_funding.scss */
 .b-funding__block {
   display: -webkit-box;
   display: -webkit-flex;
@@ -440,7 +493,37 @@
           box-shadow: 0 1px 13px 0 rgba(0, 0, 0, 0.1);
 }
 
-/* line 48, src/scss/_components/_funding.scss */
+@media screen and (max-width: 1365px) {
+  /* line 41, src/scss/_components/_funding.scss */
+  .b-funding__block {
+    padding: 30px 10px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* line 41, src/scss/_components/_funding.scss */
+  .b-funding__block {
+    max-width: -webkit-calc((100% - 24px) / 2);
+    max-width: calc((100% - 24px) / 2);
+  }
+  /* line 57, src/scss/_components/_funding.scss */
+  .b-funding__block:nth-of-type(1), .b-funding__block:nth-of-type(2) {
+    margin-bottom: 13px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* line 41, src/scss/_components/_funding.scss */
+  .b-funding__block {
+    max-width: 100%;
+  }
+  /* line 65, src/scss/_components/_funding.scss */
+  .b-funding__block:nth-of-type(3) {
+    margin-bottom: 13px;
+  }
+}
+
+/* line 70, src/scss/_components/_funding.scss */
 .b-funding__block-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -453,7 +536,16 @@
   padding-bottom: 13px;
 }
 
-/* line 54, src/scss/_components/_funding.scss */
+@media screen and (max-width: 991px) {
+  /* line 70, src/scss/_components/_funding.scss */
+  .b-funding__block-wrapper {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+
+/* line 79, src/scss/_components/_funding.scss */
 .b-funding__block-title {
   padding-bottom: 28px;
   font-weight: bold;
@@ -464,7 +556,35 @@
   line-height: 1;
 }
 
-/* line 64, src/scss/_components/_funding.scss */
+@media screen and (max-width: 1199px) {
+  /* line 79, src/scss/_components/_funding.scss */
+  .b-funding__block-title {
+    min-height: 90px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* line 79, src/scss/_components/_funding.scss */
+  .b-funding__block-title {
+    min-height: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 79, src/scss/_components/_funding.scss */
+  .b-funding__block-title {
+    min-height: 90px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* line 79, src/scss/_components/_funding.scss */
+  .b-funding__block-title {
+    min-height: 0;
+  }
+}
+
+/* line 101, src/scss/_components/_funding.scss */
 .b-funding__block-deposit {
   padding-bottom: 10px;
   opacity: 0.5;
@@ -476,7 +596,7 @@
   line-height: 1;
 }
 
-/* line 75, src/scss/_components/_funding.scss */
+/* line 112, src/scss/_components/_funding.scss */
 .b-funding__block-min {
   padding-bottom: 10px;
   font-family: 'SF Pro Text', sans-serif;
@@ -488,7 +608,7 @@
   line-height: 1;
 }
 
-/* line 86, src/scss/_components/_funding.scss */
+/* line 123, src/scss/_components/_funding.scss */
 .b-funding__block-max {
   min-height: 30px;
   padding-bottom: 10px;
@@ -501,7 +621,7 @@
   line-height: 1;
 }
 
-/* line 98, src/scss/_components/_funding.scss */
+/* line 135, src/scss/_components/_funding.scss */
 .b-funding__block-desc {
   display: -webkit-box;
   display: -webkit-flex;
@@ -520,7 +640,7 @@
   text-align: center;
 }
 
-/* line 110, src/scss/_components/_funding.scss */
+/* line 147, src/scss/_components/_funding.scss */
 .b-funding__block-btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -551,7 +671,7 @@
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 127, src/scss/_components/_funding.scss */
+/* line 164, src/scss/_components/_funding.scss */
 .b-funding__block-btn:hover {
   background-color: rgba(227, 8, 19, 0.9);
   -webkit-transition: background-color 0.3s ease-in-out;
@@ -559,7 +679,7 @@
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 134, src/scss/_components/_funding.scss */
+/* line 171, src/scss/_components/_funding.scss */
 .b-funding__box {
   display: -webkit-box;
   display: -webkit-flex;
@@ -577,12 +697,43 @@
           box-shadow: 0 1px 13px 0 rgba(0, 0, 0, 0.1);
 }
 
-/* line 145, src/scss/_components/_funding.scss */
+@media screen and (max-width: 991px) {
+  /* line 171, src/scss/_components/_funding.scss */
+  .b-funding__box {
+    padding: 30px 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 171, src/scss/_components/_funding.scss */
+  .b-funding__box {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+
+/* line 188, src/scss/_components/_funding.scss */
 .b-funding__box-left {
   width: 338px;
 }
 
-/* line 149, src/scss/_components/_funding.scss */
+@media screen and (max-width: 991px) {
+  /* line 188, src/scss/_components/_funding.scss */
+  .b-funding__box-left {
+    width: 240px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 188, src/scss/_components/_funding.scss */
+  .b-funding__box-left {
+    width: 100%;
+    padding-bottom: 13px;
+  }
+}
+
+/* line 199, src/scss/_components/_funding.scss */
 .b-funding__box-right {
   display: -webkit-box;
   display: -webkit-flex;
@@ -599,12 +750,27 @@
   height: 100%;
 }
 
-/* line 157, src/scss/_components/_funding.scss */
+@media screen and (max-width: 991px) {
+  /* line 199, src/scss/_components/_funding.scss */
+  .b-funding__box-right {
+    max-width: -webkit-calc(100% - 240px);
+    max-width: calc(100% - 240px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 199, src/scss/_components/_funding.scss */
+  .b-funding__box-right {
+    max-width: 100%;
+  }
+}
+
+/* line 213, src/scss/_components/_funding.scss */
 .b-funding__box-top, .b-funding__box-bottom {
   height: 50%;
 }
 
-/* line 162, src/scss/_components/_funding.scss */
+/* line 218, src/scss/_components/_funding.scss */
 .b-funding__box-top {
   display: -webkit-box;
   display: -webkit-flex;
@@ -613,22 +779,41 @@
   padding-bottom: 9px;
 }
 
-/* line 166, src/scss/_components/_funding.scss */
+@media screen and (max-width: 575px) {
+  /* line 218, src/scss/_components/_funding.scss */
+  .b-funding__box-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/* line 225, src/scss/_components/_funding.scss */
 .b-funding__box-top > div {
   width: 50%;
 }
 
-/* line 169, src/scss/_components/_funding.scss */
+@media screen and (max-width: 575px) {
+  /* line 225, src/scss/_components/_funding.scss */
+  .b-funding__box-top > div {
+    width: 100%;
+    padding-bottom: 13px;
+  }
+}
+
+/* line 232, src/scss/_components/_funding.scss */
 .b-funding__box-top > div p {
   text-align: left;
 }
 
-/* line 175, src/scss/_components/_funding.scss */
+/* line 238, src/scss/_components/_funding.scss */
 .b-funding__box-bottom {
   padding-top: 9px;
 }
 
-/* line 179, src/scss/_components/_funding.scss */
+/* line 242, src/scss/_components/_funding.scss */
 .b-funding__box-title {
   padding-bottom: 10px;
   font-weight: bold;
@@ -638,7 +823,7 @@
   line-height: 1;
 }
 
-/* line 188, src/scss/_components/_funding.scss */
+/* line 251, src/scss/_components/_funding.scss */
 .b-funding__box-desc {
   opacity: 0.5;
   font-family: 'SF Pro Text', sans-serif;
@@ -647,7 +832,7 @@
   letter-spacing: 0;
 }
 
-/* line 196, src/scss/_components/_funding.scss */
+/* line 259, src/scss/_components/_funding.scss */
 .b-funding__box-info {
   font-family: 'SF Pro Text', sans-serif;
   font-size: 16px;
@@ -655,7 +840,7 @@
   letter-spacing: 0;
 }
 
-/* line 203, src/scss/_components/_funding.scss */
+/* line 266, src/scss/_components/_funding.scss */
 .b-funding__box-btn {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -686,7 +871,17 @@
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 220, src/scss/_components/_funding.scss */
+@media screen and (max-width: 575px) {
+  /* line 266, src/scss/_components/_funding.scss */
+  .b-funding__box-btn {
+    height: auto;
+    min-height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+/* line 289, src/scss/_components/_funding.scss */
 .b-funding__box-btn:hover {
   background-color: rgba(227, 8, 19, 0.9);
   -webkit-transition: background-color 0.3s ease-in-out;
