@@ -3,6 +3,9 @@
 .b-security {
   padding-top: 50px;
   padding-bottom: 100px;
+  @include adaptive(767) {
+    padding-bottom: 50px;
+  }
 
   .c-grid {
     max-width: 1350px;
@@ -11,11 +14,11 @@
   &__title {
     padding-bottom: 30px;
     font-weight: bold;
-    font-size: 80px;
     color: #000000;
     letter-spacing: 0;
     text-align: center;
     line-height: 1;
+    @include fluid(font-size, 320px, 1366px, 40px, 80px);
   }
 
   &__desc {
@@ -26,16 +29,19 @@
     padding-bottom: 50px;
     text-align: center;
     font-family: 'SF Pro Text', sans-serif;
-    font-size: 18px;
     color: #000000;
     letter-spacing: 0;
     line-height: 24px;
+    @include fluid(font-size, 320px, 992px, 14px, 18px);
   }
 
   &__block {
     display: flex;
     width: 100%;
     margin-bottom: 80px;
+    @include adaptive(767) {
+      margin-bottom: 50px;
+    }
 
     &:hover {
       img {
@@ -47,14 +53,29 @@
     &--half {
       flex-direction: column;
       max-width: calc((100% - 60px) / 2);
+      @include adaptive(767) {
+        max-width: calc((100% - 15px) / 2);
+      }
+      @include adaptive(575) {
+        max-width: 100%;
+      }
     }
 
     &--full {
       flex-direction: row;
       min-height: 290px;
+      @include adaptive(575) {
+        flex-direction: column;
+      }
 
       .b-security__block-top {
         max-width: calc(50% - 30px);
+        @include adaptive(767) {
+          max-width: calc(50% - 15px);
+        }
+        @include adaptive(575) {
+          max-width: 100%;
+        }
       }
 
       .b-security__block-bottom {
@@ -70,6 +91,12 @@
 
       .b-security__block-bottom {
         padding-left: 60px;
+        @include adaptive(767) {
+          padding-left: 15px;
+        }
+        @include adaptive(575) {
+          padding-left: 0;
+        }
       }
     }
 
@@ -97,23 +124,21 @@
       }
     }
 
-    &-bottom {}
-
     &-title {
       padding-bottom: 20px;
       font-weight: bold;
-      font-size: 32px;
       color: #000000;
       letter-spacing: 0;
       line-height: 1;
+      @include fluid(font-size, 320px, 1200px, 24px, 32px);
     }
 
     &-text {
       font-family: "SF Pro Text", sans-serif;
-      font-size: 18px;
       color: #000000;
       letter-spacing: 0;
       line-height: line-height-convert(24,18);
+      @include fluid(font-size, 320px, 992px, 14px, 18px);
 
       &--pb {
         padding-bottom: 30px;
