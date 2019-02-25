@@ -108,9 +108,8 @@
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 3, src/scss/_components/_deposit.scss */
-.h-deposit {
-  overflow: hidden;
+/* line 3, src/scss/_components/_details.scss */
+.b-details {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -120,425 +119,93 @@
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #F6F7FB;
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #fff;
 }
 
-/* line 10, src/scss/_components/_deposit.scss */
-.h-deposit .c-grid {
-  max-width: 624px;
+/* line 12, src/scss/_components/_details.scss */
+.b-details .c-grid {
+  max-width: 1350px;
 }
 
-/* line 14, src/scss/_components/_deposit.scss */
-.h-deposit__bg {
-  z-index: 0;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  left: 0;
-  right: 0;
-  width: 100%;
-  max-width: 1678px;
-  height: -webkit-calc(100% - (103px + 86px));
-  height: calc(100% - (103px + 86px));
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 103px;
-  padding-bottom: 86px;
-}
-
-@media screen and (max-width: 1365px) {
-  /* line 14, src/scss/_components/_deposit.scss */
-  .h-deposit__bg {
-    height: -webkit-calc(100% - 103px);
-    height: calc(100% - 103px);
-    padding-bottom: 0;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  /* line 14, src/scss/_components/_deposit.scss */
-  .h-deposit__bg {
-    display: none;
-  }
-}
-
-/* line 36, src/scss/_components/_deposit.scss */
-.h-deposit__bg img {
-  position: absolute;
-}
-
-@media screen and (max-width: 1439px) {
-  /* line 36, src/scss/_components/_deposit.scss */
-  .h-deposit__bg img {
-    -webkit-transform: scale(0.85);
-        -ms-transform: scale(0.85);
-            transform: scale(0.85);
-  }
-}
-
-@media screen and (max-width: 1439px) {
-  /* line 36, src/scss/_components/_deposit.scss */
-  .h-deposit__bg img {
-    -webkit-transform: scale(0.8);
-        -ms-transform: scale(0.8);
-            transform: scale(0.8);
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  /* line 36, src/scss/_components/_deposit.scss */
-  .h-deposit__bg img {
-    -webkit-transform: scale(0.75);
-        -ms-transform: scale(0.75);
-            transform: scale(0.75);
-  }
-}
-
-/* line 48, src/scss/_components/_deposit.scss */
-.h-deposit__bg img:nth-of-type(1) {
-  top: 0;
-  left: 0;
-}
-
-@media screen and (max-width: 991px) {
-  /* line 48, src/scss/_components/_deposit.scss */
-  .h-deposit__bg img:nth-of-type(1) {
-    opacity: 0;
-  }
-}
-
-/* line 55, src/scss/_components/_deposit.scss */
-.h-deposit__bg img:nth-of-type(2) {
-  top: 20px;
-  right: 220px;
-}
-
-@media screen and (max-width: 1365px) {
-  /* line 55, src/scss/_components/_deposit.scss */
-  .h-deposit__bg img:nth-of-type(2) {
-    right: 0;
-  }
-}
-
-/* line 62, src/scss/_components/_deposit.scss */
-.h-deposit__bg img:nth-of-type(3) {
-  top: 50%;
-  left: 120px;
-}
-
-@media screen and (max-width: 1365px) {
-  /* line 62, src/scss/_components/_deposit.scss */
-  .h-deposit__bg img:nth-of-type(3) {
-    left: 0;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  /* line 62, src/scss/_components/_deposit.scss */
-  .h-deposit__bg img:nth-of-type(3) {
-    opacity: 0;
-  }
-}
-
-/* line 72, src/scss/_components/_deposit.scss */
-.h-deposit__bg img:nth-of-type(4) {
-  top: 50%;
-  right: 0;
-}
-
-@media screen and (max-width: 1199px) {
-  /* line 72, src/scss/_components/_deposit.scss */
-  .h-deposit__bg img:nth-of-type(4) {
-    opacity: 0;
-  }
-}
-
-/* line 79, src/scss/_components/_deposit.scss */
-.h-deposit__bg img:nth-of-type(5) {
-  bottom: 20px;
-  left: 25px;
-}
-
-@media screen and (max-width: 1365px) {
-  /* line 79, src/scss/_components/_deposit.scss */
-  .h-deposit__bg img:nth-of-type(5) {
-    left: 0;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  /* line 79, src/scss/_components/_deposit.scss */
-  .h-deposit__bg img:nth-of-type(5) {
-    opacity: 0;
-  }
-}
-
-/* line 89, src/scss/_components/_deposit.scss */
-.h-deposit__bg img:nth-of-type(6) {
-  bottom: 0;
-  right: 150px;
-}
-
-@media screen and (max-width: 1365px) {
-  /* line 89, src/scss/_components/_deposit.scss */
-  .h-deposit__bg img:nth-of-type(6) {
-    right: 0;
-  }
-}
-
-/* line 99, src/scss/_components/_deposit.scss */
-.h-deposit__wrapper {
-  z-index: 2;
-  position: relative;
-  padding-top: 115px;
-  padding-bottom: 105px;
-}
-
-@media screen and (min-width: 320px) {
-  /* line 99, src/scss/_components/_deposit.scss */
-  .h-deposit__wrapper {
-    padding-top: -webkit-calc(115px + 110 * (100vw - 320px) / 1120);
-    padding-top: calc(115px + 110 * (100vw - 320px) / 1120);
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  /* line 99, src/scss/_components/_deposit.scss */
-  .h-deposit__wrapper {
-    padding-top: 225px;
-  }
-}
-
-@media screen and (min-width: 320px) {
-  /* line 99, src/scss/_components/_deposit.scss */
-  .h-deposit__wrapper {
-    padding-bottom: -webkit-calc(105px + 110 * (100vw - 320px) / 1120);
-    padding-bottom: calc(105px + 110 * (100vw - 320px) / 1120);
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  /* line 99, src/scss/_components/_deposit.scss */
-  .h-deposit__wrapper {
-    padding-bottom: 215px;
-  }
-}
-
-/* line 106, src/scss/_components/_deposit.scss */
-.h-deposit__title {
-  padding-bottom: 25px;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #000000;
-  letter-spacing: 0;
-  line-height: 50px;
-  font-size: 50px;
-}
-
-@media screen and (min-width: 320px) {
-  /* line 106, src/scss/_components/_deposit.scss */
-  .h-deposit__title {
-    line-height: -webkit-calc(50px + 50 * (100vw - 320px) / 1600);
-    line-height: calc(50px + 50 * (100vw - 320px) / 1600);
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  /* line 106, src/scss/_components/_deposit.scss */
-  .h-deposit__title {
-    line-height: 100px;
-  }
-}
-
-@media screen and (min-width: 320px) {
-  /* line 106, src/scss/_components/_deposit.scss */
-  .h-deposit__title {
-    font-size: -webkit-calc(50px + 50 * (100vw - 320px) / 1600);
-    font-size: calc(50px + 50 * (100vw - 320px) / 1600);
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  /* line 106, src/scss/_components/_deposit.scss */
-  .h-deposit__title {
-    font-size: 100px;
-  }
-}
-
-/* line 116, src/scss/_components/_deposit.scss */
-.h-deposit__text {
-  padding-bottom: 70px;
-  font-family: 'SF Pro Text', sans-serif;
-  color: rgba(0, 0, 0, 0.5);
-  letter-spacing: 0;
-  line-height: 27px;
-  font-size: 16px;
-}
-
-@media screen and (min-width: 320px) {
-  /* line 116, src/scss/_components/_deposit.scss */
-  .h-deposit__text {
-    font-size: -webkit-calc(16px + 4 * (100vw - 320px) / 1120);
-    font-size: calc(16px + 4 * (100vw - 320px) / 1120);
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  /* line 116, src/scss/_components/_deposit.scss */
-  .h-deposit__text {
-    font-size: 20px;
-  }
-}
-
-/* line 124, src/scss/_components/_deposit.scss */
-.h-deposit__text--pb {
-  padding-bottom: 30px;
-}
-
-/* line 129, src/scss/_components/_deposit.scss */
-.h-deposit__mobile {
-  display: none;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+/* line 16, src/scss/_components/_details.scss */
+.b-details__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 30px;
+}
+
+/* line 20, src/scss/_components/_details.scss */
+.b-details__wrapper-left, .b-details__wrapper-right {
+  width: 50%;
+}
+
+/* line 26, src/scss/_components/_details.scss */
+.b-details__title {
+  padding-bottom: 75px;
+  font-weight: bold;
+  font-size: 80px;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+/* line 35, src/scss/_components/_details.scss */
+.b-details__text {
+  font-family: 'SF Pro Text', sans-serif;
+  font-size: 22px;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 1.45455;
+}
+
+/* line 43, src/scss/_components/_details.scss */
+.b-details__list {
+  padding-left: 140px;
+}
+
+/* line 46, src/scss/_components/_details.scss */
+.b-details__list-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-bottom: 20px;
 }
 
-@media screen and (max-width: 767px) {
-  /* line 129, src/scss/_components/_deposit.scss */
-  .h-deposit__mobile {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-  }
+/* line 51, src/scss/_components/_details.scss */
+.b-details__list-item:last-of-type {
+  padding-bottom: 0;
 }
 
-/* line 139, src/scss/_components/_deposit.scss */
-.h-deposit__mobile > div {
-  width: 100%;
-  max-width: -webkit-calc(100% / 3);
-  max-width: calc(100% / 3);
-  padding: 5px 10px;
-  margin-bottom: 10px;
-}
-
-/* line 145, src/scss/_components/_deposit.scss */
-.h-deposit__mobile > div img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-/* line 153, src/scss/_components/_deposit.scss */
-.h-deposit__block {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media screen and (max-width: 575px) {
-  /* line 153, src/scss/_components/_deposit.scss */
-  .h-deposit__block {
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-  }
-}
-
-/* line 161, src/scss/_components/_deposit.scss */
-.h-deposit__block > div:nth-of-type(1) {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-/* line 165, src/scss/_components/_deposit.scss */
-.h-deposit__block > div:nth-of-type(2) {
-  width: 148px;
-}
-
-@media screen and (max-width: 575px) {
-  /* line 165, src/scss/_components/_deposit.scss */
-  .h-deposit__block > div:nth-of-type(2) {
-    width: 100%;
-    margin-top: 30px;
-  }
-}
-
-/* line 174, src/scss/_components/_deposit.scss */
-.h-deposit__block p {
+/* line 55, src/scss/_components/_details.scss */
+.b-details__list-item span {
+  opacity: 0.5;
   font-family: 'SF Pro Text', sans-serif;
+  font-size: 18px;
   color: #000000;
   letter-spacing: 0;
-  line-height: 32px;
-  font-size: 20px;
 }
 
-@media screen and (min-width: 320px) {
-  /* line 174, src/scss/_components/_deposit.scss */
-  .h-deposit__block p {
-    font-size: -webkit-calc(20px + 4 * (100vw - 320px) / 1120);
-    font-size: calc(20px + 4 * (100vw - 320px) / 1120);
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  /* line 174, src/scss/_components/_deposit.scss */
-  .h-deposit__block p {
-    font-size: 24px;
-  }
-}
-
-/* line 182, src/scss/_components/_deposit.scss */
-.h-deposit__block a {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  max-width: 148px;
-  height: 44px;
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
-  background-color: #E30813;
+/* line 63, src/scss/_components/_details.scss */
+.b-details__list-item p {
   font-family: 'SF Pro Text', sans-serif;
-  font-size: 14px;
   font-weight: 600;
-  color: #FFFFFF;
+  font-size: 18px;
+  color: #000000;
   letter-spacing: 0;
-  -webkit-transition: background-color 0.3s ease-in-out;
-  -o-transition: background-color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
-}
-
-/* line 198, src/scss/_components/_deposit.scss */
-.h-deposit__block a:hover {
-  background-color: rgba(227, 8, 19, 0.85);
-  -webkit-transition: background-color 0.3s ease-in-out;
-  -o-transition: background-color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
 }
 
 /*# sourceMappingURL=maps/app.css.map */
