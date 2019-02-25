@@ -1,9 +1,54 @@
-/* line 6, src/scss/_shared/_common.scss */
-.p-banking .h-deposit__title {
-  padding-bottom: 60px;
+@media screen and (max-width: 1365px) {
+  /* line 8, src/scss/_shared/_common.scss */
+  .p-banking .h-deposit__bg img:nth-of-type(1) {
+    display: none;
+  }
 }
 
-/* line 11, src/scss/_shared/_common.scss */
+@media screen and (max-width: 1199px) {
+  /* line 13, src/scss/_shared/_common.scss */
+  .p-banking .h-deposit__bg img:nth-of-type(3) {
+    display: none;
+  }
+}
+
+/* line 21, src/scss/_shared/_common.scss */
+.p-banking .h-deposit__title {
+  padding-bottom: 15px;
+  font-size: 40px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 21, src/scss/_shared/_common.scss */
+  .p-banking .h-deposit__title {
+    padding-bottom: -webkit-calc(15px + 45 * (100vw - 320px) / 880);
+    padding-bottom: calc(15px + 45 * (100vw - 320px) / 880);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* line 21, src/scss/_shared/_common.scss */
+  .p-banking .h-deposit__title {
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  /* line 21, src/scss/_shared/_common.scss */
+  .p-banking .h-deposit__title {
+    font-size: -webkit-calc(40px + 10 * (100vw - 320px) / 880);
+    font-size: calc(40px + 10 * (100vw - 320px) / 880);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* line 21, src/scss/_shared/_common.scss */
+  .p-banking .h-deposit__title {
+    font-size: 50px;
+  }
+}
+
+/* line 27, src/scss/_shared/_common.scss */
 .p-banking .h-deposit__list-item {
   display: -webkit-box;
   display: -webkit-flex;
@@ -16,24 +61,24 @@
   padding-bottom: 20px;
 }
 
-/* line 16, src/scss/_shared/_common.scss */
+/* line 32, src/scss/_shared/_common.scss */
 .p-banking .h-deposit__list-item:last-of-type {
   padding-bottom: 60px;
 }
 
-/* line 21, src/scss/_shared/_common.scss */
+/* line 37, src/scss/_shared/_common.scss */
 .p-banking .h-deposit__list-item > div:nth-of-type(1) {
   width: 80px;
 }
 
-/* line 25, src/scss/_shared/_common.scss */
+/* line 41, src/scss/_shared/_common.scss */
 .p-banking .h-deposit__list-item > div:nth-of-type(2) {
   width: 100%;
   max-width: -webkit-calc(100% - 80px);
   max-width: calc(100% - 80px);
 }
 
-/* line 32, src/scss/_shared/_common.scss */
+/* line 48, src/scss/_shared/_common.scss */
 .p-banking .h-deposit__list-circle {
   overflow: hidden;
   display: -webkit-box;
@@ -55,13 +100,13 @@
   background-color: #F3323D;
 }
 
-/* line 42, src/scss/_shared/_common.scss */
+/* line 58, src/scss/_shared/_common.scss */
 .p-banking .h-deposit__list-circle svg {
   width: 20px;
   height: 26px;
 }
 
-/* line 48, src/scss/_shared/_common.scss */
+/* line 64, src/scss/_shared/_common.scss */
 .p-banking .h-deposit__list p {
   font-weight: bold;
   font-size: 18px;
@@ -69,7 +114,7 @@
   letter-spacing: 0;
 }
 
-/* line 56, src/scss/_shared/_common.scss */
+/* line 72, src/scss/_shared/_common.scss */
 .p-banking .h-deposit__btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -100,7 +145,7 @@
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 73, src/scss/_shared/_common.scss */
+/* line 89, src/scss/_shared/_common.scss */
 .p-banking .h-deposit__btn:hover {
   background-color: rgba(227, 8, 19, 0.9);
   -webkit-transition: background-color 0.3s ease-in-out;

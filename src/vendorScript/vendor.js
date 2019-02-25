@@ -2,7 +2,7 @@
 *
 * Include :
 *
-* - TweenMax;
+* - GreenSock;
 * - jquery;
 * - app
 * - script

@@ -3,8 +3,24 @@
 .p-banking {
 
   .h-deposit {
+    &__bg {
+      img {
+        &:nth-of-type(1) {
+          @include adaptive(1365) {
+            display: none;
+          }
+        }
+        &:nth-of-type(3) {
+          @include adaptive(1199) {
+            display: none;
+          }
+        }
+      }
+    }
+
     &__title {
-      padding-bottom: 60px;
+      @include fluid(padding-bottom, 320px, 1200px, 15px, 60px);
+      @include fluid(font-size, 320px, 1200px, 40px, 50px);
     }
 
     &__list {
