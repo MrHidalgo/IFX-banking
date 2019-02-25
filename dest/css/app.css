@@ -896,34 +896,87 @@
   background-color: #ffffff;
 }
 
-/* line 8, src/scss/_components/_withdrawals.scss */
+@media screen and (max-width: 767px) {
+  /* line 3, src/scss/_components/_withdrawals.scss */
+  .b-withdrawals {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+/* line 12, src/scss/_components/_withdrawals.scss */
 .b-withdrawals .c-grid {
   max-width: 890px;
 }
 
-/* line 12, src/scss/_components/_withdrawals.scss */
+/* line 16, src/scss/_components/_withdrawals.scss */
 .b-withdrawals__title {
   padding-bottom: 30px;
   font-weight: bold;
-  font-size: 80px;
   color: #000000;
   letter-spacing: 0;
   text-align: center;
   line-height: 1;
+  font-size: 40px;
 }
 
-/* line 22, src/scss/_components/_withdrawals.scss */
+@media screen and (min-width: 320px) {
+  /* line 16, src/scss/_components/_withdrawals.scss */
+  .b-withdrawals__title {
+    font-size: -webkit-calc(40px + 40 * (100vw - 320px) / 1046);
+    font-size: calc(40px + 40 * (100vw - 320px) / 1046);
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  /* line 16, src/scss/_components/_withdrawals.scss */
+  .b-withdrawals__title {
+    font-size: 80px;
+  }
+}
+
+/* line 26, src/scss/_components/_withdrawals.scss */
 .b-withdrawals__desc {
-  padding-bottom: 85px;
   text-align: center;
   font-family: 'SF Pro Text', sans-serif;
-  font-size: 18px;
   color: #000000;
   letter-spacing: 0;
   line-height: 24px;
+  padding-bottom: 40px;
+  font-size: 14px;
 }
 
-/* line 32, src/scss/_components/_withdrawals.scss */
+@media screen and (min-width: 320px) {
+  /* line 26, src/scss/_components/_withdrawals.scss */
+  .b-withdrawals__desc {
+    padding-bottom: -webkit-calc(40px + 45 * (100vw - 320px) / 1046);
+    padding-bottom: calc(40px + 45 * (100vw - 320px) / 1046);
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  /* line 26, src/scss/_components/_withdrawals.scss */
+  .b-withdrawals__desc {
+    padding-bottom: 85px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  /* line 26, src/scss/_components/_withdrawals.scss */
+  .b-withdrawals__desc {
+    font-size: -webkit-calc(14px + 4 * (100vw - 320px) / 672);
+    font-size: calc(14px + 4 * (100vw - 320px) / 672);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* line 26, src/scss/_components/_withdrawals.scss */
+  .b-withdrawals__desc {
+    font-size: 18px;
+  }
+}
+
+/* line 36, src/scss/_components/_withdrawals.scss */
 .b-withdrawals__list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -936,7 +989,7 @@
           flex-direction: column;
 }
 
-/* line 36, src/scss/_components/_withdrawals.scss */
+/* line 40, src/scss/_components/_withdrawals.scss */
 .b-withdrawals__list-item {
   display: -webkit-box;
   display: -webkit-flex;
@@ -944,37 +997,52 @@
   display: flex;
 }
 
-/* line 40, src/scss/_components/_withdrawals.scss */
+/* line 44, src/scss/_components/_withdrawals.scss */
 .b-withdrawals__list-item > div:nth-of-type(1) {
   width: 110px;
 }
 
-/* line 44, src/scss/_components/_withdrawals.scss */
+@media screen and (max-width: 575px) {
+  /* line 44, src/scss/_components/_withdrawals.scss */
+  .b-withdrawals__list-item > div:nth-of-type(1) {
+    width: 80px;
+  }
+}
+
+/* line 51, src/scss/_components/_withdrawals.scss */
 .b-withdrawals__list-item > div:nth-of-type(2) {
   width: 100%;
   max-width: -webkit-calc(100% - 110px);
   max-width: calc(100% - 110px);
 }
 
-/* line 49, src/scss/_components/_withdrawals.scss */
+@media screen and (max-width: 575px) {
+  /* line 51, src/scss/_components/_withdrawals.scss */
+  .b-withdrawals__list-item > div:nth-of-type(2) {
+    max-width: -webkit-calc(100% - 80px);
+    max-width: calc(100% - 80px);
+  }
+}
+
+/* line 59, src/scss/_components/_withdrawals.scss */
 .b-withdrawals__list-item > div p {
   padding-bottom: 50px;
   text-align: left;
 }
 
-/* line 55, src/scss/_components/_withdrawals.scss */
+/* line 65, src/scss/_components/_withdrawals.scss */
 .b-withdrawals__list-item > div .icon-i-withdrawals-0 {
   width: 49px;
   height: 48px;
 }
 
-/* line 59, src/scss/_components/_withdrawals.scss */
+/* line 69, src/scss/_components/_withdrawals.scss */
 .b-withdrawals__list-item > div .icon-i-withdrawals-1 {
   width: 50px;
   height: 41px;
 }
 
-/* line 63, src/scss/_components/_withdrawals.scss */
+/* line 73, src/scss/_components/_withdrawals.scss */
 .b-withdrawals__list-item > div .icon-i-withdrawals-2 {
   width: 64px;
   height: 45px;

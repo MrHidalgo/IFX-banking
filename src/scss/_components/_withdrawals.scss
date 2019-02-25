@@ -4,6 +4,10 @@
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: #ffffff;
+  @include adaptive(767) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 
   .c-grid {
     max-width: 890px;
@@ -12,21 +16,21 @@
   &__title {
     padding-bottom: 30px;
     font-weight: bold;
-    font-size: 80px;
     color: #000000;
     letter-spacing: 0;
     text-align: center;
     line-height: 1;
+    @include fluid(font-size, 320px, 1366px, 40px, 80px);
   }
 
   &__desc {
-    padding-bottom: 85px;
     text-align: center;
     font-family: 'SF Pro Text', sans-serif;
-    font-size: 18px;
     color: #000000;
     letter-spacing: 0;
     line-height: 24px;
+    @include fluid(padding-bottom, 320px, 1366px, 40px, 85px);
+    @include fluid(font-size, 320px, 992px, 14px, 18px);
   }
 
   &__list {
@@ -39,11 +43,17 @@
       > div {
         &:nth-of-type(1) {
           width: 110px;
+          @include adaptive(575) {
+            width: 80px;
+          }
         }
 
         &:nth-of-type(2) {
           width: 100%;
           max-width: calc(100% - 110px);
+          @include adaptive(575) {
+            max-width: calc(100% - 80px);
+          }
         }
 
         p {
