@@ -1,0 +1,82 @@
+// COMMON :: START
+
+.p-banking {
+
+  .h-deposit {
+    &__title {
+      padding-bottom: 60px;
+    }
+
+    &__list {
+      &-item {
+        display: flex;
+        align-items: center;
+        padding-bottom: 20px;
+
+        &:last-of-type {
+          padding-bottom: 60px;
+        }
+
+        > div {
+          &:nth-of-type(1) {
+            width: 80px;
+          }
+
+          &:nth-of-type(2) {
+            width: 100%;
+            max-width: calc(100% - 80px);
+          }
+        }
+      }
+
+      &-circle {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        background-color: #F3323D;
+
+        svg {
+          width: 20px;
+          height: 26px;
+        }
+      }
+
+      p {
+        font-weight: bold;
+        font-size: 18px;
+        color: #000000;
+        letter-spacing: 0;
+      }
+    }
+
+    &__btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 278px;
+      height: 64px;
+      border-radius: 3px;
+      background-color: #E30813;
+      text-align: center;
+      font-family: 'SF Pro Text', sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      color: #FFFFFF;
+      letter-spacing: 0;
+      @include transition(background-color);
+
+      &:hover {
+        background-color: rgba(#E30813, 0.9);
+        @include transition(background-color);
+      }
+    }
+  }
+
+}
+
+// COMMON :: END

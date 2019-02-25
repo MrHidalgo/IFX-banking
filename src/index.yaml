@@ -1,0 +1,6 @@
+ProjectTitle: IFX Banking
+
+PageList:
+- file: index.html
+  titleName: Home
+  ready: 96
