@@ -8,6 +8,10 @@
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: #fff;
+  @include adaptive(767) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 
   .c-grid {
     max-width: 1350px;
@@ -16,32 +20,42 @@
   &__wrapper {
     display: flex;
     align-items: center;
+    @include adaptive(767) {
+      flex-wrap: wrap;
+    }
 
     &-left,
     &-right {
       width: 50%;
+      @include adaptive(767) {
+        width: 100%;
+      }
     }
   }
 
   &__title {
-    padding-bottom: 75px;
     font-weight: bold;
-    font-size: 80px;
     color: #000000;
     letter-spacing: 0;
     line-height: 1;
+    @include fluid(padding-bottom, 320px, 1366px, 35px, 75px);
+    @include fluid(font-size, 320px, 1366px, 40px, 80px);
   }
 
   &__text {
     font-family: 'SF Pro Text', sans-serif;
-    font-size: 22px;
     color: #000000;
     letter-spacing: 0;
     line-height: line-height-convert(32,22);
+    @include fluid(font-size, 320px, 1366px, 16px, 22px);
   }
 
   &__list {
-    padding-left: 140px;
+    @include fluid(padding-left, 320px, 1366px, 0px, 140px);
+    @include adaptive(767) {
+      padding-top: 30px;
+      padding-left: 0 !important;
+    }
 
     &-item {
       display: flex;
@@ -55,17 +69,17 @@
       span {
         opacity: 0.5;
         font-family: 'SF Pro Text', sans-serif;
-        font-size: 18px;
         color: #000000;
         letter-spacing: 0;
+        @include fluid(font-size, 320px, 1366px, 14px, 18px);
       }
 
       p {
         font-family: 'SF Pro Text', sans-serif;
         font-weight: 600;
-        font-size: 18px;
         color: #000000;
         letter-spacing: 0;
+        @include fluid(font-size, 320px, 1366px, 14px, 18px);
       }
     }
   }
