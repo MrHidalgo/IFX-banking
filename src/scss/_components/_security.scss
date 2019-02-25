@@ -8,7 +8,118 @@
     max-width: 1350px;
   }
 
+  &__title {
+    padding-bottom: 30px;
+    font-weight: bold;
+    font-size: 80px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 1;
+  }
 
+  &__desc {
+    width: 100%;
+    max-width: 910px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+    text-align: center;
+    font-family: 'SF Pro Text', sans-serif;
+    font-size: 18px;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: 24px;
+  }
+
+  &__block {
+    display: flex;
+    width: 100%;
+    margin-bottom: 80px;
+
+    &:hover {
+      img {
+        transform: scale(1.1);
+        @include transition(transform);
+      }
+    }
+
+    &--half {
+      flex-direction: column;
+      max-width: calc((100% - 60px) / 2);
+    }
+
+    &--full {
+      flex-direction: row;
+      min-height: 290px;
+
+      .b-security__block-top {
+        max-width: calc(50% - 30px);
+      }
+
+      .b-security__block-bottom {
+        width: 100%;
+        max-width: 100%;
+      }
+
+      .b-security__block-top,
+      .b-security__block-bottom {
+        width: 100%;
+        height: 100%;
+      }
+
+      .b-security__block-bottom {
+        padding-left: 60px;
+      }
+    }
+
+    &-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &-top {
+      overflow: hidden;
+      position: relative;
+      min-height: 180px;
+      margin-bottom: 30px;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        @include transition(transform);
+      }
+    }
+
+    &-bottom {}
+
+    &-title {
+      padding-bottom: 20px;
+      font-weight: bold;
+      font-size: 32px;
+      color: #000000;
+      letter-spacing: 0;
+      line-height: 1;
+    }
+
+    &-text {
+      font-family: "SF Pro Text", sans-serif;
+      font-size: 18px;
+      color: #000000;
+      letter-spacing: 0;
+      line-height: line-height-convert(24,18);
+
+      &--pb {
+        padding-bottom: 30px;
+      }
+    }
+  }
 }
 
 // SECTION security :: END
